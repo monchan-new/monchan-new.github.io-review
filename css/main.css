@@ -163,7 +163,8 @@ h2 ~ p {
   padding-top: 10vh;
 }
 .hero-home {
-  background-image: url("https://static-sample2.new-worldline.com/images/shark.jpg");
+  /* background-image: url("https://static-sample2.new-worldline.com/images/shark.jpg"); */
+  background-image: url("../images/shark.jpg");
   background-size: cover;
   background-position: center top;
 }
