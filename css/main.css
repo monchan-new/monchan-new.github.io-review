@@ -55,7 +55,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   min-height: 100vh;
 }
 .content-container {
@@ -64,6 +64,10 @@ body {
   /* flex-shrink: 1 flex-basis: auto; がディフォルトでの指定*/
   padding-top: 10vh;
   width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', Helvetica, sans-serif;
+  font-weight: 100;
 }
 h1 {
   font-size: 7vw;
@@ -381,15 +385,15 @@ h4 {
   color: #fff;
   display: inline-block;
   font-family: helvetica, arial, sans;
-  font-size: 1rem;
+  font-size: 1.7rem;
   font-weight: bold;
-  height: 2.5em;
+  height: 1.5em;
   line-height: 1;
-  padding-top: 0.85em;
+  padding-top: 0.25em;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
-  width: 2.5em;
+  width: 1.5em;
 }
 .social-list {
   list-style: none;
