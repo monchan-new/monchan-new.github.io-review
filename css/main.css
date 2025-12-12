@@ -582,6 +582,7 @@ h4 {
   width: 85vw;
 }
 .pull-left {
+  width: 100%;
   float: left;
   margin: 2em 2em 2em -2%;
 }
