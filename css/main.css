@@ -61,7 +61,7 @@ body {
 .content-container {
   display: flex;
   flex-grow: 1;
-  /* flex-shrink: 1 flex-basis: auto; がディフォルトでの指定*/
+  /* flex-grow: 0; flex-shrink: 1; flex-basis: auto; がディフォルトでの指定*/
   padding-top: 10vh;
   width: 100%;
 }
@@ -277,7 +277,7 @@ h4 {
 .col-three {
   display: flex;
   flex: 1;
-  /* flex: 1 1 0%; と同じ意味 */
+  /* flex: 1 1 0px; と同じ意味 */
 }
 .col {
   box-sizing: border-box;
@@ -291,7 +291,7 @@ h4 {
 }
 .col-three .col-content {
   flex: 1;
-  /* flex: 1 1 0%; と同じ意味*/
+  /* flex: 1 1 0px; と同じ意味*/
 }
 .col-three .col-aside {
   flex: 0 1 20em;
@@ -440,7 +440,7 @@ h4 {
   .callout-title {
     /* flex-basis: 0;
     flex-grow: 1; */
-    /* flex: 1 1 0%; */
+    /* flex: 1 1 0px; */
     flex: 1;
     font-size: 5.75vw;
     text-align: right;
@@ -721,7 +721,7 @@ h4 {
     padding: 1em;
   }
   .gallery .gallery-thumbs {
-    /* flex: 1 1 0%; */
+    /* flex: 1 1 0px; */
     flex: 1;
     height: auto;
     white-space: nowrap;
