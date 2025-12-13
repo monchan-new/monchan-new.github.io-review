@@ -8,9 +8,13 @@ function activateGallery() {
   let description = document.querySelector("#gallery-info .description"); 
 
   thumbnails.forEach( (thumbnail) => {
+    // 大画像をプリロードする
+      let newImageSrc = thumbnail.dataset.largeVersion; // HMTLタグの属性に"data-xxx-yyy"を指定した場合は、JSからその値を"該当のDOM要素.data.xxxYyy(camel caseに変換した形)"でアクセスできる
+      let largeVersion =new Image(); // （DOMに配置しない）imgオブジェクトを生成する
+      largeVersion.src = newImageSrc; // imgオブジェクトに新たなsrc属性を設定することで画像のローディングが開始される
+
     thumbnail.addEventListener("click", () => {
       // クリックされたサムネイル画像（のLarge Version）をメイン画像として設定する
-      let newImageSrc = thumbnail.dataset.largeVersion; // HMTLタグの属性に"data-xxx-yyy"を指定した値は、JSから"該当のDOM要素.data.xxxYyy(camel caseに変換した形)"でアクセスできる
       mainImage.setAttribute("src", newImageSrc);
       // clickされた画像のaltも同様にメイン画像のaltに設定する
       mainImage.setAttribute("alt", thumbnail.alt);
